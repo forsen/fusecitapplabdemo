@@ -1,12 +1,14 @@
 <Page ux:Class='Resources'>
 	<Router ux:Dependency='router' />
 	<JavaScript File='Resources.js' />
-	<ScrollView>
-		<StackPanel>
-			<Each Items='{resourceList}'>
-				<Text Value='{Name}' />
-			</Each>
-			<Button Text='Go Back' Clicked='{goBack}' />
-		</StackPanel>
-	</ScrollView>
+	<NativeViewHost>
+		<DockPanel>
+			<MapView Latitude='60' Longitude='10.81' Zoom='8'>
+				<Each Items='{resourceList}'>
+					<MapMarker Latitude='{latitude}' Longitude='{longitude}' Label='{Name}' />
+				</Each>
+			</MapView>
+			<Button Dock='Bottom' Text='Go Back' Clicked='{goBack}' />
+		</DockPanel>
+	</NativeViewHost>
 </Page>

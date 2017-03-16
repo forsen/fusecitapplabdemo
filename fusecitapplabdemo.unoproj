@@ -1,6 +1,7 @@
 {
   "RootNamespace":"",
   "Packages": [
+    "Fuse.Maps",
   	"Fuse",
   	"FuseJS"
   ],

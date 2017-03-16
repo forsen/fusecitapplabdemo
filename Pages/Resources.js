@@ -1,11 +1,20 @@
 const Observable = require('FuseJS/Observable')
 const ckan = require('ckan')
+const compose = require('node_modules/citapplab/lib/bundle').compose
 const resourceList = Observable()
 
-const { resource } = ckan
+const { 
+	parsers,
+	resource
+} = ckan
+
+const getResourceForMaps = (resourceId) => compose(
+	resource(resourceId),
+	parsers.resourceGetWithValidLocation
+)
 
 this.onParameterChanged((param) => {
-	resource(param.resources[0].id)()
+	getResourceForMaps(param.resources[0].id)()
 		.then((response) => {
 			resourceList.replaceAll(response)
 		})

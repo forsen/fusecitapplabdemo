@@ -1,5 +1,12 @@
 <Page ux:Class='Resources'>
 	<Router ux:Dependency='router' />
 	<JavaScript File='Resources.js' />
-	<Button Text='Go Back' Clicked='{goBack}' />
+	<ScrollView>
+		<StackPanel>
+			<Each Items='{resourceList}'>
+				<Text Value='{Name}' />
+			</Each>
+			<Button Text='Go Back' Clicked='{goBack}' />
+		</StackPanel>
+	</ScrollView>
 </Page>

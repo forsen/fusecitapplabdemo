@@ -5,6 +5,7 @@
   	"FuseJS"
   ],
   "Includes": [
-    "*"
+    "*",
+    "node_modules/citapplab/lib/bundle.js:Bundle"
   ]
 }

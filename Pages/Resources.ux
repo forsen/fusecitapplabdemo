@@ -1,0 +1,5 @@
+<Page ux:Class='Resources'>
+	<Router ux:Dependency='router' />
+	<JavaScript File='Resources.js' />
+	<Button Text='Go Back' Clicked='{goBack}' />
+</Page>

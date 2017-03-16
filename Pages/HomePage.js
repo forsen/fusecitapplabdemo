@@ -23,4 +23,11 @@ getPackagesWithTag()
 		console.log('Something went wrong', error)
 	})
 
-module.exports = { packageList }
+const showResources = () => {
+	router.push('Resources')
+}
+
+module.exports = { 
+	packageList,
+	showResources
+}

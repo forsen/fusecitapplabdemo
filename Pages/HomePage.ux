@@ -1,10 +1,11 @@
 <Page ux:Class='HomePage'>
+	<Router ux:Dependency='router' />
 	<JavaScript File='HomePage.js'/>
 	<DockPanel>
 		<ScrollView>
 			<StackPanel>
 				<Each Items='{packageList}'>
-					<Text Value='{title}'/>
+					<Text Value='{title}' Clicked='{showResources}'/>
 				</Each>
 			</StackPanel>
 		</ScrollView>

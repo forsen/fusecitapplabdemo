@@ -1,10 +1,21 @@
 const Observable = require('FuseJS/Observable')
 const ckan = require('ckan')
+const compose = require('node_modules/citapplab/lib/bundle').compose
+const {
+	limit, 
+	packages,
+	tag
+} = ckan
 
-const { packages } = ckan
 const packageList = Observable()
 
-packages()
+const getPackagesWithTag = compose(
+	packages,
+	limit(100),
+	tag('Kart')
+)
+
+getPackagesWithTag()
 	.then((response) => {
 		packageList.replaceAll(response)
 	})

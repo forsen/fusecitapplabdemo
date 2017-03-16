@@ -19,7 +19,7 @@ this.onParameterChanged((param) => {
 			resourceList.replaceAll(response)
 		})
 		.catch((error) => {
-			console.log('error', error)
+			console.log(error.message)
 		})
 })
 

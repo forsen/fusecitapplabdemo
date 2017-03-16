@@ -20,7 +20,7 @@ getPackagesWithTag()
 		packageList.replaceAll(response)
 	})
 	.catch((error) => {
-		console.log('Something went wrong', error)
+		console.log(error.message)
 	})
 
 const showResources = (argument) => {

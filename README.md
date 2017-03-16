@@ -15,3 +15,6 @@ $ npm install
 ```bash
 $ fuse preview -t=(Android|iOS|Local)
 ```
+
+## GIF
+<img src="/../gif/citapplab.gif">

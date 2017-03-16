@@ -1,5 +1,10 @@
 <Page ux:Class='HomePage'>
+	<JavaScript File='HomePage.js'/>
 	<DockPanel>
-		<Text Value='HomePage'/>
+		<StackPanel>
+			<Each Items='{packageList}'>
+				<Text Value='{title}'/>
+			</Each>
+		</StackPanel>
 	</DockPanel>
 </Page>

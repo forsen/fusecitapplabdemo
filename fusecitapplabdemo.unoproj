@@ -6,6 +6,7 @@
   ],
   "Includes": [
     "*",
-    "node_modules/citapplab/lib/bundle.js:Bundle"
+    "node_modules/citapplab/lib/bundle.js:Bundle",
+    "ckan.js:Bundle"
   ]
 }

@@ -1,0 +1,5 @@
+<Page ux:Class='HomePage'>
+	<DockPanel>
+		<Text Value='HomePage'/>
+	</DockPanel>
+</Page>

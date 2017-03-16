@@ -1,2 +1,5 @@
 <App>
+	<ClientPanel>
+		<HomePage />
+	</ClientPanel>
 </App>
